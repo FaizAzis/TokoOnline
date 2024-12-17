@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Gateway</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+    <div class="row g-4">
+      <!-- Left Section -->
+      <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center bg-white p-5 border rounded">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.j8oglFHmWlpRNtT-qoS5AQHaHa&pid=Api&P=0&h=180" alt="Google Logo" class="img-fluid mb-4" style="max-width: 200px;">
+        <h1 class="text-primary fw-bold">Payment Gateway</h1>
+        <p class="text-muted">Enter school location details!</p>
+      </div>
+      <!-- Right Section -->
+      <div class="col-lg-6 bg-white p-5 border rounded">
+        <h2 class="fw-bold mb-4">Complete Registration Payment</h2>
+        <form>
+          <!-- Personal Details -->
+          <h5 class="fw-semibold mb-3">Personal Details</h5>
+          <div class="mb-3">
+            <label for="addressLine" class="form-label">Address Line</label>
+            <input type="text" id="addressLine" class="form-control" placeholder="P.O.Box 1223">
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="city" class="form-label">City</label>
+              <input type="text" id="city" class="form-control" placeholder="Arusha">
+            </div>
+            <div class="col-md-6">
+              <label for="state" class="form-label">State</label>
+              <input type="text" id="state" class="form-control" placeholder="Arusha, Tanzania">
+            </div>
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="postalCode" class="form-label">Postal Code</label>
+            <input type="text" id="postalCode" class="form-control" placeholder="9090">
+          </div>
+          <!-- Payment Methods -->
+          <h5 class="fw-semibold mt-4 mb-3">Payment Methods</h5>
+          <div class="d-flex gap-3 mb-4">
+            <i class="fab fa-cc-visa fa-3x text-primary"></i>
+            <i class="fab fa-cc-stripe fa-3x text-info"></i>
+            <i class="fab fa-cc-paypal fa-3x text-secondary"></i>
+            <i class="fab fa-cc-mastercard fa-3x text-danger"></i>
+            <i class="fab fa-google-pay fa-3x text-dark"></i>
+          </div>
+          <!-- Card Details -->
+          <h5 class="fw-semibold mb-3">Card Details</h5>
+          <div class="mb-3">
+            <label for="cardholderName" class="form-label">Cardholder's Name</label>
+            <input type="text" id="cardholderName" class="form-control" placeholder="Seen on your card">
+          </div>
+          <div class="mb-3">
+            <label for="cardNumber" class="form-label">Card Number</label>
+            <input type="text" id="cardNumber" class="form-control" placeholder="Seen on your card">
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="expiryDate" class="form-label">Expirity</label>
+              <input type="text" id="expiryDate" class="form-control" placeholder="20/23">
+            </div>
+            <div class="col-md-6">
+              <label for="cvc" class="form-label">CVC</label>
+              <input type="text" id="cvc" class="form-control" placeholder="654">
+            </div>
+          </div>
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary w-100 mt-4">Next</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
